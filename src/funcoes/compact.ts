@@ -9,5 +9,13 @@
  * @returns somente os itens definidos.
  */
  export const compact = (items: unknown[]): unknown[] => {
-  return null;
+  let resultado = [...items];
+  let falsyItems = false || 0 || '' || null || undefined;
+
+  return resultado.filter((valor) => {
+    if(valor !== falsyItems){
+      return valor;
+    };
+  });
+  
 };
