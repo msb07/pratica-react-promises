@@ -12,5 +12,10 @@
  * @returns 
  */
 export const chunk = (valores: number[], tamanho: number): number[][] => {
-  return null;
+  let copiaValores = [...valores];
+  let resultado = []
+  for(let i = 0; i < valores.length; i = i + tamanho){
+    resultado.push(copiaValores.splice(0,tamanho))
+  }
+  return resultado
 };
