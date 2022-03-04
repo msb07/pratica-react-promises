@@ -8,5 +8,8 @@
  * @returns somente os itens definidos.
  */
 export const uniq = <T>(args: T[]): T[] => {
-  return null;
+  let unicos = [...args];
+  return unicos.filter((valor, index, array) => {
+    return array.indexOf(valor) === index;
+  })
 };
