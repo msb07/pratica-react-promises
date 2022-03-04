@@ -2,12 +2,13 @@
   "name": "pratica-git-typescript",
   "version": "1.0.0",
   "description": "Pacote com uma série de funções uteis para tratamentos de strings e arrays. Deverá ser utilizado para a turma da Raro Academy",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "test:watch": "jest --watchAll "
+    "test:watch": "jest --watchAll ",
+    "debug": "ts-node ."
   },
   "author": "pauloFernandes",
   "license": "ISC",
